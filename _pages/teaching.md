@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: French 1010
+title: Teaching
 description: Teaching beginning French to undergraduate students at the University of Colorado Boulder
 nav: true
 nav_order: 6
