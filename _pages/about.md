@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Affiliations</a>. Boulder, CO. idriss.djiofackteledjieu@colorado.edu.
 
 profile:
   align: right
   image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Woodbury Art and Science 405</p>
+    <p>University of Colorado Boulder</p>
+    <p>Boulder, CO</p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
@@ -19,8 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Master's in Computer Science student at the University of Colorado Boulder. My research interest is in human robots interaction. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpeg` and put it in the `img/` folder.
+Currently pursuing a Master's degree in Computer Science at the University of Colorado Boulder, My research interest is in Human-Robot Interaction. Prior to this, I served as a Machine Learning Engineer in the Brain Lab, where my focus was on predicting companies' e-waste. Alongside my academic pursuits, I co-founded a startup, uTOK, aimed at revolutionizing laundry services in Cameroon.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My diverse experience and adaptable skillset make me an ideal candidate for roles spanning Software Engineering, Data Science, and Machine Learning Engineering. If your company has an opening that aligns with my interests and expertise, I would be thrilled to discuss further via email at djiofackidriss@gmail.com.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
