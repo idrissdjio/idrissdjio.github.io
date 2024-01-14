@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Joining the HIRO Lab - University of Colorado Boulder
