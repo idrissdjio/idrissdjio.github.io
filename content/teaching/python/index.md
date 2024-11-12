@@ -1,151 +1,145 @@
 ---
-title: Learn Python for Data Science
-summary: Quickly learn the basics of Python and how to use it in data science in under 10 minutes!
-date: 2023-10-24
+title: Learn Python
+summary: Easily learn Python in 10 minutes!
+date: 2024-10-28
 type: docs
 math: false
 tags:
   - Python
-  - Data Science
 image:
-  caption: 'Start coding with Python today!'
+  caption: 'Embed rich media such as videos and LaTeX math'
 ---
 
-Python is one of the most popular languages in data science due to its simplicity and powerful libraries. This tutorial covers Python basics and introduces some essential tools for data science. Let’s get started!
+This tutorial is designed to help you get started with Python quickly and effectively. In just 10 minutes, you'll learn essential concepts and be able to write basic Python code.
 
-## 1. Python Basics
+## Getting Started with Python
 
-### What is Python?
-Python is a versatile programming language used for web development, automation, machine learning, and data science. Its simple syntax makes it beginner-friendly, while its vast ecosystem of libraries makes it ideal for data analysis.
+Python is a versatile programming language known for its simplicity and readability. Follow these examples to understand its syntax and capabilities.
 
-### Running Python
-You can run Python code in various environments, like Jupyter Notebooks, the terminal, or Python IDEs. To test it, open a Python interpreter by typing `python` in your terminal, or try online editors like [Repl.it](https://replit.com/).
+### Variables and Data Types
 
-Try the code below:
+In Python, variables are used to store data values. You don’t need to declare a variable type; Python infers it automatically.
+
 ```python
-print("Hello, Python!")
-```
-This code will output `Hello, Python!` to the console.
-
----
-
-## 2. Variables and Data Types
-
-### Declaring Variables
-In Python, you create a variable simply by assigning a value to a name:
-```python
-name = "Alex"
+# Integer
 age = 25
+
+# Float
+height = 5.9
+
+# String
+name = "John"
+
+# Boolean
+is_student = True
 ```
 
-### Basic Data Types
-Python has several core data types:
-- **String**: Text, such as `"Hello, World!"`
-- **Integer**: Whole numbers, e.g., `42`
-- **Float**: Decimal numbers, e.g., `3.14`
-- **Boolean**: `True` or `False`
+### Basic Operations
+
+Python supports basic arithmetic operations like addition, subtraction, multiplication, and division.
 
 ```python
-greeting = "Hello, Data Science!"
-is_active = True
-score = 98.6
+# Addition
+a = 10
+b = 5
+result = a + b
+
+# Subtraction
+result = a - b
+
+# Multiplication
+result = a * b
+
+# Division
+result = a / b
 ```
 
-### Type Conversion
-You can convert data types using built-in functions like `str()`, `int()`, and `float()`:
+### Control Structures
+
+#### If-Else Statements
+
+Control the flow of your program using conditional statements.
+
 ```python
-num = 10
-num_str = str(num)  # Converts integer to string
-```
+age = 18
 
----
-
-## 3. Lists and Dictionaries
-
-### Lists
-Lists are ordered collections that can store multiple values:
-```python
-fruits = ["apple", "banana", "cherry"]
-print(fruits[0])  # Outputs: apple
-```
-
-### Dictionaries
-Dictionaries store data in key-value pairs and are useful for labeled data:
-```python
-person = {"name": "Alex", "age": 25}
-print(person["name"])  # Outputs: Alex
-```
-
----
-
-## 4. Control Flow
-
-### Conditionals
-Conditionals let you execute code based on conditions:
-```python
-if age > 18:
-    print("Adult")
+if age >= 18:
+    print("You are an adult.")
 else:
-    print("Minor")
+    print("You are a minor.")
 ```
 
-### Loops
-Loops let you repeat code. Here’s a `for` loop and a `while` loop:
+#### Loops
+
+Use loops to execute a block of code multiple times.
 
 ```python
 # For loop
-for fruit in fruits:
-    print(fruit)
+for i in range(5):
+    print("Iteration", i)
 
 # While loop
 count = 0
-while count < 3:
-    print(count)
+while count < 5:
+    print("Count is:", count)
     count += 1
 ```
 
----
+### Functions
 
-## 5. Functions
-
-Functions let you define reusable blocks of code. Here’s how to define a function:
+Functions in Python help organize code into reusable blocks.
 
 ```python
 def greet(name):
-    return f"Hello, {name}!"
+    return "Hello, " + name
 
-print(greet("Alex"))  # Outputs: Hello, Alex!
+message = greet("Alice")
+print(message)
+```
+
+### Working with Lists
+
+Lists in Python allow you to store multiple items in a single variable.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Output: apple
+
+# Add an item
+fruits.append("orange")
+
+# Remove an item
+fruits.remove("banana")
+```
+
+### Dictionaries
+
+Dictionaries store data in key-value pairs.
+
+```python
+person = {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"
+}
+
+print(person["name"])  # Output: Alice
+```
+
+### Simple Math Operations
+
+Python can handle mathematical calculations directly.
+
+```python
+import math
+
+# Square root
+print(math.sqrt(16))  # Output: 4.0
+
+# Pi constant
+print(math.pi)  # Output: 3.141592653589793
 ```
 
 ---
 
-## 6. Introduction to Libraries
-
-Python’s power in data science comes from its extensive libraries. Here are a few essential ones:
-
-### Numpy
-Numpy is a library for numerical operations in Python:
-```python
-import numpy as np
-arr = np.array([1, 2, 3])
-print(arr.mean())  # Outputs the mean of the array
-```
-
-### Pandas
-Pandas is used for data manipulation and analysis:
-```python
-import pandas as pd
-data = pd.DataFrame({
-    "name": ["Alex", "Bob", "Clara"],
-    "age": [25, 30, 35]
-})
-print(data.head())
-```
-
----
-
-## Summary
-
-In this tutorial, you learned the basics of Python, including variables, data types, lists, dictionaries, functions, and essential libraries like Numpy and Pandas. Start exploring these concepts in your data science journey!
-
-## Did you find this page helpful? Consider sharing it 🙌
+With these basics, you're ready to start exploring Python. Practice by writing small programs to reinforce these concepts. Happy coding!
