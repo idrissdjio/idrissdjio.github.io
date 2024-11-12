@@ -3,7 +3,7 @@ title: Speech Emotion Recognition
 date: 2024-03-26
 external_link: https://github.com/idrissdjio/speech-recognition
 tags:
-  - Hugo
+  - MlOps
   - Wowchemy
   - Markdown
 ---

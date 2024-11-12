@@ -3,7 +3,7 @@ title: Full Stack mobile app for Online Laundry
 date: 2022-08-15
 external_link: https://github.com/idrissdjio/uTOK
 tags:
-  - Hugo
+  - Full-Stack App
   - Wowchemy
   - Markdown
 ---
