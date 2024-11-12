@@ -1,13 +1,13 @@
 ---
-title: Pandas
-date: 2023-10-26
-external_link: https://github.com/pandas-dev/pandas
+title: Speech Emotion Recognition
+date: 2024-03-26
+external_link: https://github.com/idrissdjio/speech-recognition
 tags:
   - Hugo
   - Wowchemy
   - Markdown
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+Full-stack web app for analyzing emotional states, featuring a custom-built ML model trained from scratch and deployed on AWS. Backend developed with Flask and deployed on Vercel.
 
 <!--more-->
