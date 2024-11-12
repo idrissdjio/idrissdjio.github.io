@@ -1,140 +1,151 @@
 ---
-title: Learn Python
-summary: Easily learn Python in 10 minutes!
+title: Learn Python for Data Science
+summary: Quickly learn the basics of Python and how to use it in data science in under 10 minutes!
 date: 2023-10-24
 type: docs
 math: false
 tags:
   - Python
+  - Data Science
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption: 'Start coding with Python today!'
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+Python is one of the most popular languages in data science due to its simplicity and powerful libraries. This tutorial covers Python basics and introduces some essential tools for data science. Let’s get started!
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
+## 1. Python Basics
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+### What is Python?
+Python is a versatile programming language used for web development, automation, machine learning, and data science. Its simple syntax makes it beginner-friendly, while its vast ecosystem of libraries makes it ideal for data analysis.
 
-## Video
+### Running Python
+You can run Python code in various environments, like Jupyter Notebooks, the terminal, or Python IDEs. To test it, open a Python interpreter by typing `python` in your terminal, or try online editors like [Repl.it](https://replit.com/).
 
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
+Try the code below:
+```python
+print("Hello, Python!")
+```
+This code will output `Hello, Python!` to the console.
 
-{{< youtube D2vj0WcvH5c >}}
+---
 
-**Youtube**:
+## 2. Variables and Data Types
 
-    {{</* youtube w7Ft2ymGmfc */>}}
-
-**Bilibili**:
-
-    {{</* bilibili id="BV1WV4y1r7DF" */>}}
-
-**Video file**
-
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
-
-    {{</* video src="my_video.mp4" controls="yes" */>}}
-
-## Podcast
-
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
-
-    {{</* audio src="ambient-piano.mp3" */>}}
-
-Try it out:
-
-{{< audio src="ambient-piano.mp3" >}}
-
-## Test students
-
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
-
-```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
-{{</* /spoiler */>}}
+### Declaring Variables
+In Python, you create a variable simply by assigning a value to a name:
+```python
+name = "Alex"
+age = 25
 ```
 
-renders as
-
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
-
-## Math
-
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
-
-To render _inline_ or _block_ math, wrap your LaTeX math with `{{</* math */>}}$...${{</* /math */>}}` or `{{</* math */>}}$$...$${{</* /math */>}}`, respectively.
-
-{{% callout note %}}
-We wrap the LaTeX math in the Hugo Blox _math_ shortcode to prevent Hugo rendering our math as Markdown.
-{{% /callout %}}
-
-Example **math block**:
-
-```latex
-{{</* math */>}}
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-{{</* /math */>}}
-```
-
-renders as
-
-{{< math >}}
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-{{< /math >}}
-
-Example **inline math** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` renders as {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
-
-Example **multi-line math** using the math linebreak (`\\`):
-
-```latex
-{{</* math */>}}
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
-{{</* /math */>}}
-```
-
-renders as
-
-{{< math >}}
-
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
-$$
-
-{{< /math >}}
-
-## Code
-
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
-
-
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
-
-renders as
+### Basic Data Types
+Python has several core data types:
+- **String**: Text, such as `"Hello, World!"`
+- **Integer**: Whole numbers, e.g., `42`
+- **Float**: Decimal numbers, e.g., `3.14`
+- **Boolean**: `True` or `False`
 
 ```python
+greeting = "Hello, Data Science!"
+is_active = True
+score = 98.6
+```
+
+### Type Conversion
+You can convert data types using built-in functions like `str()`, `int()`, and `float()`:
+```python
+num = 10
+num_str = str(num)  # Converts integer to string
+```
+
+---
+
+## 3. Lists and Dictionaries
+
+### Lists
+Lists are ordered collections that can store multiple values:
+```python
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Outputs: apple
+```
+
+### Dictionaries
+Dictionaries store data in key-value pairs and are useful for labeled data:
+```python
+person = {"name": "Alex", "age": 25}
+print(person["name"])  # Outputs: Alex
+```
+
+---
+
+## 4. Control Flow
+
+### Conditionals
+Conditionals let you execute code based on conditions:
+```python
+if age > 18:
+    print("Adult")
+else:
+    print("Minor")
+```
+
+### Loops
+Loops let you repeat code. Here’s a `for` loop and a `while` loop:
+
+```python
+# For loop
+for fruit in fruits:
+    print(fruit)
+
+# While loop
+count = 0
+while count < 3:
+    print(count)
+    count += 1
+```
+
+---
+
+## 5. Functions
+
+Functions let you define reusable blocks of code. Here’s how to define a function:
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alex"))  # Outputs: Hello, Alex!
+```
+
+---
+
+## 6. Introduction to Libraries
+
+Python’s power in data science comes from its extensive libraries. Here are a few essential ones:
+
+### Numpy
+Numpy is a library for numerical operations in Python:
+```python
+import numpy as np
+arr = np.array([1, 2, 3])
+print(arr.mean())  # Outputs the mean of the array
+```
+
+### Pandas
+Pandas is used for data manipulation and analysis:
+```python
 import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
+data = pd.DataFrame({
+    "name": ["Alex", "Bob", "Clara"],
+    "age": [25, 30, 35]
+})
+print(data.head())
 ```
 
-## Inline Images
+---
 
-```go
-{{</* icon name="python" */>}} Python
-```
+## Summary
 
-renders as
-
-{{< icon name="python" >}} Python
+In this tutorial, you learned the basics of Python, including variables, data types, lists, dictionaries, functions, and essential libraries like Numpy and Pandas. Start exploring these concepts in your data science journey!
 
 ## Did you find this page helpful? Consider sharing it 🙌
