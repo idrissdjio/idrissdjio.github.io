@@ -38,6 +38,8 @@ profiles:
     url: https://www.linkedin.com/in/idrissdjio/
   - icon: brands/github
     url: https://github.com/idrissdjio
+  - icon: brands/x
+    url: https://twitter.com/djiofack12
 
 # Interests
 interests:
@@ -135,4 +137,8 @@ projects:
     summary: |
       - Built a high-accuracy speech recognition model with CNN, achieving 94% classification accuracy.
       - Deployed using FastAPI and Docker on AWS EC2, providing a user-friendly interface.
+
+# About Me
+about_me: |
+  Idriss Djiofack is a graduate researcher in artificial intelligence at the HIRO Lab, University of Colorado Boulder. His research focuses on distributed robotics, human-robot interaction, and natural language processing. With a background in backend engineering, Idriss is dedicated to advancing robotics applications and contributing to innovative solutions in AI.
 ---
